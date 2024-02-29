@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navigation Bar</title>
+</head>
+
+<style>
+    body,ul,li { 
+        margin:0px; padding:0px; 
+}
+    .nav, .nav li ul { 
+        padding:0px; 
+        list-style:none; 
+        width:150px; 
+        background:#ccc; 
+        border:1px solid #000; 
+}
+    .nav li, .nav li ul li { 
+        width:100%; 
+        position:relative; 
+}
+    .nav li a, .nav li ul li a { 
+        padding:7px 10px; 
+        display:block; 
+        border-bottom:1px solid #000; 
+        color: #ffffff;
+}
+    .nav li ul { 
+        display:none; 
+        position:absolute; 
+        left:150px; top:0px; 
+}
+    .nav li:hover ul { 
+        display:block; 
+}
+    .nav, .nav li {
+        background-color: #333;
+}
+    .nav:hover, .nav li:hover {
+        background-color: aqua;
+    }
+</style>
+
+<body>
+
+<ul class="nav">
+    <li><a href="">HOME</a>
+    <li><a href="">PRODUCTS</a>
+        <ul class="sub">
+            <li><a href="">PRODUCT 1</a></li>
+                <ul>
+                    <li><a href="">SUB PRODUCT</a></li>
+                    <li><a href="">SUB PRODUCT</a></li>
+                </ul>
+            <li><a href="">PRODUCT 2</a></li>              
+        </ul>
+    </li>
+    <li><a href="">ABOUT</a></li>
+    <li><a href="">CONTACT</a></li>
+
+</body>
+</html>
