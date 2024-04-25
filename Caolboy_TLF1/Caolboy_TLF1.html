@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    
+    <h1>TRAFFIC LIGHTS</h1>
+    <p>Every 6 seconds!</p>    
+    <img id="img" src="">
+
+    <button onclick="Traffic()">Click Me</button>
+
+    <script>
+        var images = ["red.png", "yellow.png", "green.png"]; 
+        var currentIndex = 0;
+
+        function Traffic() {
+            document.getElementById("img").src = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+        Traffic();
+        setInterval(Traffic, 6000);
+    </script>
+
+    </body>
+</html>
